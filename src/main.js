@@ -3,6 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Buefy from 'buefy'
+import 'buefy/lib/buefy.css'
+import 'vue-awesome/icons'
+import 'font-awesome/css/font-awesome.css'
+import './style/shared.css'
+import VueClipboard from 'vue-clipboard2'
+
+Vue.use(Buefy)
+Vue.use(VueClipboard)
 
 Vue.config.productionTip = false
 

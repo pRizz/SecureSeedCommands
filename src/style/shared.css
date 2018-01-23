@@ -1,0 +1,15 @@
+.little-scale-up-hover {
+  transition: transform 0.3s;
+}
+
+.little-scale-up-hover:hover {
+  transform: scale(1.03, 1.03);
+}
+
+.medium-scale-up-hover {
+  transition: transform 0.3s;
+}
+
+.medium-scale-up-hover:hover {
+  transform: scale(1.1, 1.1);
+}
