@@ -1,9 +1,9 @@
 export default {
   raiBlocks: {
-    displayName: 'RaiBlocks',
-    pathName: '/RaiBlocks',
-    image: '/static/RaiBlocks.svg',
-    validSeedHint: 'A valid seed in RaiBlocks consists of 64 characters of the letters A through F and the numbers 0 through 9'
+    displayName: 'NANO',
+    pathName: '/NANO',
+    image: '/static/NANO.svg',
+    validSeedHint: 'A valid seed in NANO consists of 64 characters of the letters A through F and the numbers 0 through 9'
   },
   iota: {
     displayName: 'IOTA',

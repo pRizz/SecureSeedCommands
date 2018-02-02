@@ -120,9 +120,11 @@
               <!--https://commons.wikimedia.org/wiki/File:Ruby_logo.svg-->
               <!--https://hackr.io/tutorials/learn-python/svg/python_logo-->
               <!--https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg-->
+              <!--https://nano.org/assets/img/logo.svg-->
             <!--</p>-->
           </div>
           <div class="column">
+            <p>Copyright © 2018 Peter Ryszkiewicz</p>
             <p>Created by Peter Ryszkiewicz
               <!-- FIXME -->
               <a class="button is-small" href="https://github.com/pRizz" target="_blank">
@@ -136,6 +138,7 @@
                 </span>
               </a>
             </p>
+            <p>MIT License</p>
           </div>
         </div>
       </div>
