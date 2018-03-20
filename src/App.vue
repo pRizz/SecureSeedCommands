@@ -59,7 +59,7 @@
 
     <router-view></router-view>
 
-    <section class="hero is-primary content">
+    <section class="hero is-primary content" style="margin-bottom: 0">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
