@@ -1,5 +1,7 @@
 # Secure Seed Commands
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pRizz/SecureSeedCommands.svg)](https://greenkeeper.io/)
+
 > Provides commands for generating cryptographically secure cryptocurrency seeds
 
 View it in action here: [https://www.secureseedcommands.com](https://www.secureseedcommands.com)
