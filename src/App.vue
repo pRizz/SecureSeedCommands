@@ -93,6 +93,9 @@
           <div class="column">
             <h1 class="heading title is-4">Secure Seed Commands</h1>
             <h1 class="subtitle is-6">A simple, secure, open-source reference for generating cryptocurrency seeds</h1>
+            <h2>
+              By using this website, you agree to use this tool at your own risk. This website is in beta and may contain bugs or other issues. Please report any bugs, optimizations, or feature requests at the <a href="https://github.com/pRizz/SecureSeedCommands/issues" target="_blank">GitHub Issues</a> page.
+            </h2>
           </div>
           <div class="column">
             <p>
@@ -156,16 +159,6 @@ export default {
     return {
       seedCommandTokens: SecureSeedCommandMatrix
     }
-  },
-  mounted() {
-    this.$dialog.alert({
-      title: 'Warning',
-      message: 'By using this website, you agree to use this tool at your own risk. This website is in beta and may contain bugs or other issues. Please report any bugs, optimizations, or feature requests at the <a href="https://github.com/pRizz/SecureSeedCommands/issues" target="_blank">GitHub Issues</a> page.',
-      type: 'is-warning',
-      hasIcon: true,
-      icon: 'exclamation-triangle',
-      iconPack: 'fa'
-    })
   }
 }
 </script>
