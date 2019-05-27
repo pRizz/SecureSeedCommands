@@ -44,7 +44,7 @@ function getLinuxCommand(length, startChar, endChar, startNum, endNum) {
 const linuxEchoDescription = '<code>echo $(...)</code> prints the result of the commands in parentheses with a newline at the end'
 
 function getLinuxTRDescription(startChar, endChar, startNum, endNum) {
-  return `<code>tr -dc ${startChar}-${endChar}${startNum}-${endNum} |</code> filters the random numbers to consist of the set of characters "A" through "F" and "0" through "9". Then this gets piped to the next command.`
+  return `<code>tr -dc ${startChar}-${endChar}${startNum}-${endNum} |</code> filters the random numbers to consist of the set of characters "${startChar}" through "${endChar}" and "${startNum}" through "${endNum}". Then this gets piped to the next command.`
 }
 
 function getLinuxHeadDescription(length) {
