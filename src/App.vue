@@ -7,7 +7,7 @@
 
         <!--<router-link :to="{ name: 'Home' }" class="navbar-item">-->
           <h1 class="heading title"></h1>
-          <h1 class="heading title is-4">Secure Seed Commands (Beta)</h1>
+          <h1 class="heading title is-4">Secure Seed Commands</h1>
         <!--</router-link>-->
         </div>
       </div>

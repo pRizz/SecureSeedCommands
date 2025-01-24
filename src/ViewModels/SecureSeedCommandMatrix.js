@@ -191,19 +191,11 @@ function generateSeedCommandList(length, startChar, endChar, startNum, endNum, c
 
 export default [
   {
+    cryptocurrencyType: CryptocurrencyType.bitcoin,
+    secureSeedCommandList: generateSeedCommandList(64, 'A', 'F', '0', '9', 'ABCDEF0123456789')
+  },
+  {
     cryptocurrencyType: CryptocurrencyType.raiBlocks,
     secureSeedCommandList: generateSeedCommandList(64, 'A', 'F', '0', '9', 'ABCDEF0123456789')
   },
-  {
-    cryptocurrencyType: CryptocurrencyType.iota,
-    secureSeedCommandList: generateSeedCommandList(81, 'A', 'Z', '9', '9', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ9')
-  },
-  {
-    cryptocurrencyType: CryptocurrencyType.ethereum,
-    secureSeedCommandList: generateSeedCommandList(64, 'A', 'F', '0', '9', 'ABCDEF0123456789')
-  },
-  {
-    cryptocurrencyType: CryptocurrencyType.bitcoin,
-    secureSeedCommandList: generateSeedCommandList(64, 'A', 'F', '0', '9', 'ABCDEF0123456789')
-  }
 ]

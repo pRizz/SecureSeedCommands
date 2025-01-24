@@ -25,10 +25,10 @@ export default new Router({
     [
       {
         path: '/',
-        name: 'RaiBlocks',
+        name: 'Bitcoin',
         component: SecureSeedCommandList,
         props: {
-          currentSeedCommandToken: commandListForCryptocurrencyType(CryptocurrencyType.raiBlocks)
+          currentSeedCommandToken: commandListForCryptocurrencyType(CryptocurrencyType.bitcoin)
         }
       }
     ]
