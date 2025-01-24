@@ -48,7 +48,7 @@
           <span class="navbar-item">
             <a class="button is-primary medium-scale-up-hover" href="https://github.com/pRizz/SecureSeedCommands" target="_blank">
               <span class="icon">
-                <i class="fa fa-github"></i>
+                <FontAwesomeIcon :icon="['fab', 'github']" />
               </span>
             </a>
           </span>
@@ -102,7 +102,7 @@
               For more information, view the README on
               <a class="button is-small" href="https://github.com/pRizz/SecureSeedCommands/blob/master/README.md" target="_blank">
                 <span class="icon is-small">
-                  <i class="fa fa-github"></i>
+                  <FontAwesomeIcon :icon="['fab', 'github']" />
                 </span>
                 <span>GitHub</span>
               </a>
@@ -132,12 +132,12 @@
               <!-- FIXME -->
               <a class="button is-small" href="https://github.com/pRizz" target="_blank">
                 <span class="icon is-small">
-                  <i class="fa fa-github"></i>
+                  <FontAwesomeIcon :icon="['fab', 'github']" />
                 </span>
               </a>
               <a class="button is-small" href="https://twitter.com/pryszkie" target="_blank">
                 <span class="icon is-small">
-                  <i class="fa fa-twitter"></i>
+                  <FontAwesomeIcon :icon="['fab', 'twitter']" />
                 </span>
               </a>
             </p>
@@ -152,8 +152,14 @@
 
 <script>
 import SecureSeedCommandMatrix from '@/ViewModels/SecureSeedCommandMatrix'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
+
+library.add(faGithub, faTwitter)
 
 export default {
+  components: {FontAwesomeIcon},
   name: 'app',
   data() {
     return {
