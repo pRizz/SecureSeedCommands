@@ -172,4 +172,9 @@ export default {
   color: #2c3e50;
   margin-top: 20px;
 }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
 </style>
