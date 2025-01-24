@@ -8,7 +8,9 @@
     "dev": "webpack-dev-server --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "serve-build": "npx serve dist",
+    "sync-build": "cd dist && ./s3Sync.sh"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
@@ -70,7 +72,8 @@
     "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0",
-    "webpack-merge": "^4.2.1"
+    "webpack-merge": "^4.2.1",
+    "terser-webpack-plugin": "^5.3.10"
   },
   "engines": {
     "node": ">= 6.0.0",

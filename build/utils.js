@@ -1,7 +1,6 @@
 'use strict'
 const path = require('path')
 const config = require('../config')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const packageConfig = require('../package.json')
 
 exports.assetsPath = function (_path) {
@@ -40,12 +39,6 @@ exports.cssLoaders = function (options) {
           sourceMap: options.sourceMap
         })
       })
-    }
-
-    // Extract CSS when that option is specified
-    // (which is the case during production build)
-    if (options.extract) {
-      return MiniCssExtractPlugin.loader.apply(null, loaders)
     }
   }
 
