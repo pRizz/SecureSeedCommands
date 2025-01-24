@@ -22,7 +22,7 @@
                 <h2 class="random-title">Cryptographically Secure Random Seed</h2>
                 <h4 class="random-subtitle">This is a cryptographically secure random seed for your {{currentSeedCommandToken.cryptocurrencyType.displayName}} wallet. (<a href="https://github.com/pRizz/SecureSeedCommands/blob/master/src/components/SecureSeedCommandList.vue" target="_blank">This code</a> is free and open source)</h4>
                 <h4 class="random-subtitle">Turn off your internet connection before copying this seed.</h4>
-                <div class="random-text">{{ randomCharacters }}</div>
+                <div class="random-text" @click="copyRandomText" style="cursor: pointer" v-clipboard:copy="randomCharacters">{{ randomCharacters }}</div>
                 <button class="button is-primary" @click="generateRandomCharacters">
                     <FontAwesomeIcon :icon="['fas', 'sync']" /><span>&nbsp;&nbsp;Regenerate</span>
                 </button>
@@ -53,6 +53,7 @@
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
   import { library } from '@fortawesome/fontawesome-svg-core'
   import { faSync } from '@fortawesome/free-solid-svg-icons'
+  import { Toast } from 'buefy'
   library.add(faSync)
 
   export default {
@@ -71,6 +72,13 @@
         this.randomCharacters = Array.from(array)
           .map(b => b.toString(16).padStart(2, '0'))
           .join('');
+      },
+      copyRandomText() {
+        this.$buefy.toast.open({
+          message: 'Seed copied to clipboard ✓',
+          type: 'is-success',
+          duration: 2000
+        });
       }
     },
     mounted() {

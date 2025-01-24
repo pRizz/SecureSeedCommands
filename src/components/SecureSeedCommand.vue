@@ -47,7 +47,7 @@
     },
     methods: {
       copyClicked() {
-        this.$toast.open({
+        this.$buefy.toast.open({
           message: 'Copied to Clipboard ✓',
           type: 'is-success'
         })
