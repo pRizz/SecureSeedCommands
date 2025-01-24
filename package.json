@@ -1,6 +1,6 @@
 {
   "name": "secure-seed-commands",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Provides commands for generating cryptographically secure cryptocurrency seeds",
   "author": "Peter Ryszkiewicz",
   "private": true,
